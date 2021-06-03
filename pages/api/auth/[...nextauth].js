@@ -23,6 +23,9 @@ const options = {
 			from: process.env.EMAIL_FROM,
 		}),
 	],
+	pages: {
+		signIn: '/signin',
+	},
 	database: process.env.MONGODB_URI,
 };
 
