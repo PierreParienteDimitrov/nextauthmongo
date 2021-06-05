@@ -15,6 +15,10 @@ export default function Home({ isConnected }) {
 			</Head>
 
 			<main>
+				<h1>Hello</h1>
+			</main>
+
+			{/* <main>
 				{!session && (
 					<>
 						Not Signed In <br /> <button onClick={signIn}>Sign In</button>
@@ -30,7 +34,7 @@ export default function Home({ isConnected }) {
 						<button onClick={signOut}>Sign Out</button>
 					</>
 				)}
-			</main>
+			</main> */}
 		</div>
 	);
 }

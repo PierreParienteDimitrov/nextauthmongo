@@ -35,8 +35,12 @@ export default function SignIn({ providers, csrfToken }) {
 }
 
 SignIn.getInitialProps = async (context) => {
+	// console.log(context);
+
 	const { req, res } = context;
 	const session = await getSession({ req });
+
+	console.log(session);
 
 	if (session && res && session.accessToken) {
 		res.writeHead(302, {
